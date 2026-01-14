@@ -1,0 +1,209 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  color: #3772ff;
+}
+
+/* NAV LINKS */
+nav a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* LINK HOVER EFFECT */
+nav a:hover {
+  color: #fdca40;
+}
+
+/* FEEDBACK BUTTON */
+.feedback-btn {
+  background: #fdca40;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feedback-btn:hover {
+  background: #fdd55f;
+  transform: scale(1.05);
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+
+/* 🔁 CHANGE HERO IMAGE HERE */
+.hero {
+  position: relative;
+  height: 70vh;
+  background-image: url("https://imgur.com/a/hxYPgyY");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-text {
+  position: relative;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.hero-text h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  color: #fdca40;
+}
+
+.hero-text p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-top: 12px;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+}
+
+.section p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* =====================
+   QR BOX
+===================== */
+.qr-box {
+  width: 200px;
+  height: 200px;
+  background: #e0e0e0;
+  margin: 32px auto 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.qr-box:hover {
+  background: #d0d0d0;
+  transform: scale(1.05);
+}
+
+/* =====================
+   TOUR BOX
+===================== */
+.tour-box {
+  width: 90%;
+  max-width: 800px;
+  height: 300px;
+  background: #e0e0e0;
+  margin: 32px auto 0;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tour-box:hover {
+  background: #d0d0d0;
+  transform: scale(1.02);
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  /* =====================
+   SCAN PAGE
+===================== */
+
+.scan-header {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.scan-header h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+}
+
+.scan-header p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+#reader {
+  width: 300px;
+  margin: 24px auto;
+}
+
+.back-btn {
+  display: block;
+  margin: 24px auto;
+  background: #fdca40;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+}
