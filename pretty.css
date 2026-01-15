@@ -66,7 +66,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url("https://imgur.com/a/hxYPgyY");
+  background-image: url("https://i.imgur.com/Z1FR2OJ.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -143,13 +143,15 @@ nav a:hover {
 /* =====================
    TOUR BOX
 ===================== */
+/* TOUR DISPLAY */
 .tour-box {
   width: 90%;
   max-width: 900px;
-  height: 400px;
+  height: 380px;
   margin: 32px auto;
   border-radius: 24px;
   overflow: hidden;
+  background: #e0e0e0;
   border: 2px solid #000;
 }
 
@@ -157,6 +159,42 @@ nav a:hover {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* LABEL */
+.tour-label {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* BUTTON CONTAINER */
+.tour-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.tour-btn {
+  background: #fdca40;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* HOVER */
+.tour-btn:hover {
+  background: #fdd55f;
+  transform: scale(1.05);
+}
+
+/* ACTIVE BUTTON */
+.tour-btn.active {
+  background: #e0b400;
+  font-weight: 600;
 }
 
 

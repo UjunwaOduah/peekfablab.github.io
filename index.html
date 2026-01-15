@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>peek</title>
+  <title>peek fablab</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
@@ -14,13 +14,20 @@
 
 <!-- NAVIGATION -->
 <header class="navbar">
-  <div class="logo">peek</div>
+  <div class="logo">peek fablab</div>
   <nav>
     <a href="#home">HOME</a>
     <a href="#fablab">FABLAB TOUR</a>
     <a href="#projects">STUDENT PROJECTS</a>
   </nav>
-  <button class="feedback-btn" onclick="leaveFeedback()">LEAVE FEEDBACK</button>
+  <a
+  class="feedback-btn"
+  href="https://forms.gle/WA3ovpKaGENULcdU8"
+  target="_blank"
+>
+  LEAVE FEEDBACK
+</a>
+
 </header>
 
 <!-- HERO -->
@@ -46,19 +53,68 @@
 <!-- FABLAB TOUR -->
 <section id="fablab" class="section">
   <h2>Discover the FabLab</h2>
-  <p>
-    Visiting once is not enough, now you can virtually explore the FabLab
-    right from your phone!
+  <p class="section-text">
+    Visiting once isn’t enough, now you can virtually explore the FabLab right from your phone!
   </p>
 
- <div class="tour-box">
-  <iframe
-    src="https://www.teleport360.app/share/d18a274f-fc46-4694-9941-442bc3c38f03"
-    title="FabLab 360 Tour"
-    allowfullscreen
-  ></iframe>
-</div>
+  <!-- 360 TOUR DISPLAY -->
+  <div class="tour-box">
+    <iframe
+      id="tourFrame"
+      src="https://www.teleport360.app/share/da52876d-b1ff-4cc2-8679-8e1820511d8f"
+      title="FabLab 360 Tour"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <p class="tour-label">View more sections of the fablab</p>
+
+  <!-- BUTTONS -->
+  <section id="fablab" class="section">
+  <h2>Discover the FabLab</h2>
+  <p class="section-text">
+    Visiting once isn’t enough, now you can virtually explore the FabLab right from your phone!
+  </p>
+
+  <!-- TOUR DISPLAY -->
+ <section id="fablab" class="section">
+  <h2>Discover the FabLab</h2>
+  <p class="section-text">
+    Visiting once isn’t enough, now you can virtually explore the FabLab right from your phone!
+  </p>
+
+  <!-- 360 TOUR DISPLAY -->
+  <div class="tour-box">
+    <iframe
+      id="tourFrame"
+      src="https://www.teleport360.app/share/da52876d-b1ff-4cc2-8679-8e1820511d8f"
+      title="FabLab 360 Tour"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <p class="tour-label">View more sections of the fablab</p>
+
+  <!-- BUTTONS -->
+  <div class="tour-buttons">
+    <button class="tour-btn active" onclick="changeTour(this, 'https://www.teleport360.app/share/da52876d-b1ff-4cc2-8679-8e1820511d8f')">
+      Fab Lab
+    </button>
+
+    <button class="tour-btn" onclick="changeTour(this, 'https://www.teleport360.app/share/34a6a382-9ee9-4da8-a6fa-1d2d3e36d8ea')">
+      Soldering Station
+    </button>
+
+    <button class="tour-btn" onclick="changeTour(this, 'https://www.teleport360.app/share/da52876d-b1ff-4cc2-8679-8e1820511d8f')">
+      The Playground
+    </button>
+
+    <button class="tour-btn" onclick="changeTour(this, 'https://www.teleport360.app/share/e6e2e8ce-ad24-4d07-8c50-aaa9f0ff088c')">
+      Woodshop
+    </button>
+  </div>
 </section>
+
 
 <script src="script.js"></script>
 </body>
