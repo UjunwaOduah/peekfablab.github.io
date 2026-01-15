@@ -13,17 +13,8 @@ body {
 }
 
 /* =====================
-   GLOBAL BUTTON STYLE
+   GLOBAL BUTTONS
 ===================== */
-
-/* Remove default link styles */
-a.btn {
-  text-decoration: none;
-  color: inherit;
-}
-
-
-/* Shared button look */
 .btn {
   display: inline-block;
   background-color: #fdca40;
@@ -33,22 +24,15 @@ a.btn {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
-/* Remove browser button styles */
-button.btn {
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-/* Hover */
 .btn:hover {
   background-color: #fdd55f;
   transform: scale(1.05);
 }
 
-/* Active (selected) */
 .btn.active {
   background-color: #e0b400;
   font-weight: 600;
@@ -63,8 +47,8 @@ button.btn {
   width: 100%;
   padding: 16px 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
 }
 
@@ -72,9 +56,9 @@ button.btn {
   font-family: "Rubik", sans-serif;
   font-size: 28px;
   color: #3772ff;
+  text-decoration: none;
 }
 
-/* NAV LINKS */
 nav a {
   margin: 0 12px;
   color: white;
@@ -83,16 +67,13 @@ nav a {
   transition: color 0.3s ease;
 }
 
-/* LINK HOVER */
 nav a:hover {
   color: #fdca40;
 }
 
 /* =====================
-   HERO SECTION
+   HOME HERO
 ===================== */
-
-/* 🔁 CHANGE HERO IMAGE HERE */
 .hero {
   position: relative;
   height: 70vh;
@@ -105,10 +86,12 @@ nav a:hover {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
 }
 
 .hero-text {
   position: relative;
+  z-index: 2;
   height: 100%;
   color: white;
   display: flex;
@@ -116,19 +99,17 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 16px;
 }
 
-.hero-text h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 48px;
-  color: #fdca40;
-}
-
-.hero-text p {
-  font-size: 18px;
-  max-width: 600px;
-  margin-top: 12px;
+/* =====================
+   LAMP PAGE HERO (SEPARATE)
+===================== */
+.hero-lamp {
+  position: relative;
+  height: 50vh;
+  background-image: url("https://i.postimg.cc/y658Mq2G/DSC00062-1.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* =====================
@@ -144,86 +125,38 @@ nav a:hover {
   font-size: 36px;
 }
 
-.section p {
-  margin-top: 12px;
-  font-size: 16px;
-}
-
 /* =====================
-   QR BOX
+   VIDEO BOX
 ===================== */
-.qr-box {
-  width: 200px;
-  height: 200px;
-  background: #e0e0e0;
-  margin: 32px auto 0;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.qr-box:hover {
-  background: #d0d0d0;
-  transform: scale(1.05);
-}
-
-/* =====================
-   TOUR SECTION
-===================== */
-.tour-box {
+.video-box {
   width: 90%;
   max-width: 900px;
   height: 380px;
   margin: 32px auto;
   border-radius: 24px;
   overflow: hidden;
-  background: #e0e0e0;
   border: 2px solid #000;
 }
 
-.tour-box iframe {
+.video-box iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
 
-.tour-label {
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-/* BUTTON CONTAINER */
-.tour-buttons {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 /* =====================
-   SCAN PAGE
+   FOOTER
 ===================== */
-.scan-header {
-  text-align: center;
+.site-footer {
   padding: 32px 16px;
+  font-size: 14px;
 }
 
-.scan-header h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 32px;
-}
-
-.scan-header p {
-  margin-top: 8px;
-  font-size: 16px;
-}
-
-#reader {
-  width: 300px;
-  margin: 24px auto;
+.site-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* =====================
