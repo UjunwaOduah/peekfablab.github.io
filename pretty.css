@@ -1,4 +1,6 @@
-/* RESET */
+/* =====================
+   RESET
+===================== */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,47 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   color: #000;
+}
+
+/* =====================
+   GLOBAL BUTTON STYLE
+===================== */
+
+/* Remove default link styles */
+a.btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Shared button look */
+.btn {
+  display: inline-block;
+  background-color: #fdca40;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+/* Remove browser button styles */
+button.btn {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Hover */
+.btn:hover {
+  background-color: #fdd55f;
+  transform: scale(1.05);
+}
+
+/* Active (selected) */
+.btn.active {
+  background-color: #e0b400;
+  font-weight: 600;
 }
 
 /* =====================
@@ -34,28 +77,14 @@ body {
 nav a {
   margin: 0 12px;
   color: white;
-  text-decoration: none;
   font-size: 14px;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* LINK HOVER EFFECT */
+/* LINK HOVER */
 nav a:hover {
   color: #fdca40;
-}
-
-/* FEEDBACK BUTTON */
-.feedback-btn {
-  background: #fdca40;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.feedback-btn:hover {
-  background: #fdd55f;
-  transform: scale(1.05);
 }
 
 /* =====================
@@ -141,9 +170,8 @@ nav a:hover {
 }
 
 /* =====================
-   TOUR BOX
+   TOUR SECTION
 ===================== */
-/* TOUR DISPLAY */
 .tour-box {
   width: 90%;
   max-width: 900px;
@@ -161,7 +189,6 @@ nav a:hover {
   border: none;
 }
 
-/* LABEL */
 .tour-label {
   font-weight: 500;
   margin-bottom: 16px;
@@ -175,45 +202,9 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
-.tour-btn {
-  background: #fdca40;
-  border: none;
-  padding: 8px 14px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-/* HOVER */
-.tour-btn:hover {
-  background: #fdd55f;
-  transform: scale(1.05);
-}
-
-/* ACTIVE BUTTON */
-.tour-btn.active {
-  background: #e0b400;
-  font-weight: 600;
-}
-
-
 /* =====================
-   MOBILE
-===================== */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
-  .hero-text h1 {
-    font-size: 36px;
-  }
-
-  /* =====================
    SCAN PAGE
 ===================== */
-
 .scan-header {
   text-align: center;
   padding: 32px 16px;
@@ -234,13 +225,15 @@ nav a:hover {
   margin: 24px auto;
 }
 
-.back-btn {
-  display: block;
-  margin: 24px auto;
-  background: #fdca40;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-}
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
 
+  .hero-text h1 {
+    font-size: 36px;
+  }
 }
