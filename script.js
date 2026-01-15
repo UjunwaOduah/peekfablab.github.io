@@ -10,15 +10,21 @@ function goToScanner() {
   window.location.href = "Scanner.html";
 }
 
-function changeTour(button, url) {
-  // Change iframe source
-  document.getElementById("tourFrame").src = url;
+document.addEventListener("DOMContentLoaded", () => {
+  const iframe = document.getElementById("tourFrame");
+  const buttons = document.querySelectorAll(".tour-buttons .btn");
 
-  // Remove active class from all buttons
-  const buttons = document.querySelectorAll(".tour-btn");
-  buttons.forEach(btn => btn.classList.remove("active"));
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const newUrl = button.getAttribute("data-url");
 
-  // Set active button
-  button.classList.add("active");
-}
+      // Update iframe source
+      iframe.setAttribute("src", newUrl);
+
+      // Update active button styling
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+});
 
