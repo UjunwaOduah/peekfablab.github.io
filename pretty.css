@@ -1,6 +1,3 @@
-/* =====================
-   RESET
-===================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +9,8 @@ body {
   color: #000;
 }
 
-/* =====================
-   GLOBAL BUTTONS
-===================== */
+/* GLOBAL BUTTONS */
+
 .btn {
   display: inline-block;
   background-color: #fdca40;
@@ -38,14 +34,14 @@ body {
   font-weight: 600;
 }
 
-/* =====================
-   NAVBAR
-===================== */
+/* NAVBAR */
+
 .navbar {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 16px 24px;
+  padding: 16px 64px; /* 64px left & right */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,9 +67,8 @@ nav a:hover {
   color: #fdca40;
 }
 
-/* =====================
-   HOME HERO
-===================== */
+/* HOME HERO */
+
 .hero {
   position: relative;
   height: 70vh;
@@ -101,9 +96,17 @@ nav a:hover {
   text-align: center;
 }
 
-/* =====================
-   LAMP PAGE HERO
-===================== */
+/* HERO HEADINGS */
+
+.hero-text h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 1.1;
+  padding: 200px 115px 16px 115px;
+}
+
+/* LAMP PAGE HERO */
 .hero-lamp {
   position: relative;
   height: 50vh;
@@ -112,9 +115,8 @@ nav a:hover {
   background-position: center;
 }
 
-/* =====================
-   SECTIONS
-===================== */
+/* SECTIONS */
+
 .section {
   padding: 64px 16px;
   text-align: center;
@@ -125,9 +127,8 @@ nav a:hover {
   font-size: 36px;
 }
 
-/* =====================
-   VIDEO BOX
-===================== */
+/*  VIDEO BOX */
+
 .video-box {
   width: 90%;
   max-width: 900px;
@@ -144,10 +145,11 @@ nav a:hover {
   border: none;
 }
 
-/* =====================
-   FOOTER
-===================== */
+/* FOOTER */
+
 .site-footer {
+  background-color: #080708;
+  color: #ffffff;
   padding: 32px 16px;
   font-size: 14px;
 }
@@ -159,17 +161,46 @@ nav a:hover {
   justify-content: space-between;
 }
 
-/* =====================
-   MOBILE
-===================== */
+
+/* FABLAB TOUR BOX */
+
+#fablab {
+  background-color: #E6E8E6;
+}
+
+
+.tour-box {
+  width: 95%;
+  max-width: 1200px;   
+  height: 600px;
+  margin: 48px auto;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+.tour-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* MOBILE */
+
 @media (max-width: 768px) {
   nav {
     display: none;
   }
 
   .hero-text h1 {
-    font-size: 85px;
+    font-size: 44px;
     font-family: "Rubik", sans-serif;
     font-weight: 800;
   }
+
+  @media (max-width: 768px) {
+  .tour-box {
+    height: 360px;
+  }
+}
 }
